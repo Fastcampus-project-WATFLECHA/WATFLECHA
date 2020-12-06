@@ -80,14 +80,14 @@ $loginButton.onclick = async () => {
     }));
 
     localUser = JSON.parse(localStorage.getItem('login'));
-    window.location.href="http://localhost:3000/html/main.html"
+    window.location.href="/html/main.html"
   }catch(err) {
     console.error('[ERROR~!]', err);
   }
 }
 //회원가입 버튼 클릭시 signUp으로 이동.
 $signUpGo.onclick = () => {
-  window.location.href = "http://localhost:3000/html/signUp.html"
+  window.location.href = "/html/signUp.html"
 }
 
 //로드될때 localStorage 가져와서 객체로 풀기.
